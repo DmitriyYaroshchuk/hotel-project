@@ -1,0 +1,471 @@
+@font-face {
+    font-family: 'Boston';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/boston-regular.woff2');
+}
+@font-face {
+    font-family: 'Boston';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/boston-bold.woff2');
+}
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header-content {
+    background-image: url("../image/town.jpg");
+    background-repeat: no-repeat;
+    background-size: 1440px auto;
+    position: relative;
+    padding-top: 20px;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+.header-fixed {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0 2px 10px rgba(31, 41, 108, 0.142833);
+}
+.header-show {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+}
+.link-logo {
+    text-decoration: none;
+}
+.close {
+    margin-left: auto;
+    max-width: 35px;
+    width: 100%;
+    min-height: 35px;
+    margin-bottom: 100px;
+}
+.modal-block {
+    display: none;
+}
+.curtain {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(128,128,128,0.5);
+    z-index: 3;
+    cursor: pointer;
+}
+.hamburger-block {
+    display: block;
+    background-color: #E5E5E5;
+    padding-top: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.menu-list-hamburger {
+    flex-direction: column;
+}
+.menu-item-hamburger {
+    margin-bottom: 45px;
+}
+.hamburger-menu-icon {
+    display: none;
+}
+.modal-active {
+    display: block;
+}
+.menu {
+    max-width: 560px;
+    width: 100%;
+}
+.menu-list {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-link {
+    text-decoration: none;
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    color: #161616;
+    margin: 0;
+}
+.menu-button {
+    max-width: 197px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #1F35D4;
+    border-radius: 4px;
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: none;
+}
+.menu-button-another {
+    padding-top: 14px;
+    padding-bottom: 17px;
+    max-width: 140px;
+    width: 100%;
+    background-color: #E160E4;
+    border-radius: 4px;
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+}
+.header-inner {
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.subtitle-header {
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.title {
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.text-header {
+    max-width: 683px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.header-date {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+.header-form-fixed {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0 2px 10px rgba(31, 41, 108, 0.142833);
+}
+.header-form-show {
+    top: 70px;
+}
+.calendar-date {
+    max-width: 184px;
+    width: 100%;
+    text-align: center;
+    margin-right: 15px;
+}
+.text-calendar {
+    margin: 0;
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    color: #161616;
+    position: relative;
+}
+.text-calendar::before {
+    content: url("../image/calendar.svg");
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+.human {
+    max-width: 224px;
+    width: 100%;
+    text-align: center;
+}
+.human-text {
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    color: #161616;
+    margin: 0;
+    position: relative;
+}
+.human-text::before {
+    content: url("../image/human.svg");
+    position: absolute;
+    top: -1px;
+    left: 7px;
+}
+.hotel {
+    padding-top: 55px;
+    padding-bottom: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.content-hotel {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.info-hotel {
+    max-width: 389px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+}
+
+.photo-hotel {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+.hotel-inner::before,
+.hotel-inner::after,
+.extra-block-inner::before,
+.extra-block-inner::after,
+.hotel-george::after,
+.hotel-george::before,
+.extra-block::after,
+.extra-block::before {
+    content: "";
+    display: none;
+    position: absolute;
+    max-width: 365px;
+    width: 100%;
+    min-height: 230px;
+    background-color: #1F35D4;
+    border-radius: 4px;
+}
+.hotel-inner::before,
+.hotel-inner::after,
+.extra-block-inner::before,
+.extra-block-inner::after {
+    max-width: 375px;
+    min-height: 235px;
+}
+.hotel-inner:hover .photo-hotel-inner {
+    transform: scale(0.95);
+    transition: 0.5s ease-in-out;
+}
+.info-hotel:hover.hotel-inner::before {
+    display: block;
+}
+.info-hotel:hover.hotel-inner::after {
+    display: block;
+}
+.info-hotel:hover.hotel-george::after {
+    display: block;
+}
+.info-hotel:hover.hotel-george::before {
+    display: block;
+}
+.info-hotel:hover .extra-block-inner::before {
+    display: block;
+}
+.info-hotel:hover .extra-block-inner::after {
+    display: block;
+}
+.info-hotel:hover .extra-block::after {
+    display: block;
+}
+.info-hotel:hover .extra-block::before {
+    display: block;
+}
+
+.extra-block-inner::before,
+.extra-block::before {
+    top: -10px;
+    left: 11px;
+    transform: rotate(-1deg);
+    opacity: 0.39;
+}
+.extra-block-inner::after,
+.extra-block::after {
+    top: -17px;
+    left: 21px;
+    transform: rotate(4deg);
+    opacity: 0.39;
+}
+.hotel-inner::before,
+.hotel-george::before {
+    top: 3px;
+    left: -5px;
+    transform: rotate(-2deg);
+}
+.hotel-inner::after,
+.hotel-george::after {
+    top: 3px;
+    left: -7px;
+    transform: rotate(-4deg);
+    opacity: 0.59;
+}
+.hotel-location {
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #1F35D4;
+    margin: 0;
+}
+.title-hotel {
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #1C1C1C;
+    margin: 0;
+}
+.hotel-stars {
+    max-width: 79px;
+    width: 100%;
+    display: flex;
+}
+.photo-star {
+    margin-right: 5px;
+}
+.photo-star-last {
+    margin: 0;
+}
+.text-hotel {
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #1C1C1C;
+    margin: 0;
+}
+.price {
+    font-family: Boston,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    color: #1C1C1C;
+    margin: 0;
+}
+.hotel-george {
+    margin-bottom: 31px;
+}
+.hotel-west-cord {
+    margin-bottom: 31px;
+}
+.hotel-pullman {
+    margin-bottom: 31px;
+}
+@media all and (max-width: 1170px) {
+    .header-top {
+        justify-content: space-around;
+    }
+    .content-hotel {
+        justify-content: space-around;
+    }
+    .header-date {
+        justify-content: center;
+    }
+    .calendar-date {
+        margin-right: 0;
+    }
+
+}
+@media all and (max-width: 750px){
+    .header-inner {
+        margin: 0 auto 30px auto;
+    }
+    .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .menu {
+        display: none;
+    }
+    .hamburger-menu-icon {
+        display: block;
+    }
+    .header-date {
+        flex-direction: column;
+    }
+    .calendar-date {
+        margin-bottom: 15px;
+    }
+    .text-header {
+        max-width: 500px;
+    }
+
+}
+@media all and (max-width: 500px){
+    .content-hotel {
+        justify-content: center;
+    }
+    .header-form-show {
+        top: 67px;
+    }
+    .header-inner {
+        margin-bottom: 0;
+    }
+    .subtitle-header {
+        line-height: 30px;
+    }
+}

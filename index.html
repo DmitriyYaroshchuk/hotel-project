@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-content">
+                <div class="container">
+                    <div class="header-top js-header">
+                        <a class="link-logo" href="index.html">
+                            <img src="image/logo.svg" alt="logo">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">Zakelijk</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#">Saldo check</a>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="menu-button" type="button">Geef een hotelgiftcard</button>
+                                </li>
+                                <li class="menu-item">
+                                    <button class="menu-button-another" type="button">Boek een hotel</button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a class="hamburger-menu-icon" href="#" id="modalButton">
+                            <img src="image/hamburger-list-head.svg" alt="menu-mobile">
+                        </a>
+                        <div class="modal-block" id="modal">
+                            <div class="curtain" id="curtain"></div>
+                            <nav class="hamburger-block">
+                                <div class="close" id="modalClose">
+                                    <img src="image/close.svg" alt="close">
+                                </div>
+                                <ul class="menu-list menu-list-hamburger">
+                                    <li class="menu-item menu-item-hamburger">
+                                        <a class="menu-link menu-link-hamburger" href="#">Zakelijk</a>
+                                    </li>
+                                    <li class="menu-item menu-item-hamburger">
+                                        <a class="menu-link menu-link-hamburger" href="#">Saldo check</a>
+                                    </li>
+                                    <li class="menu-item menu-item-hamburger">
+                                        <button class="menu-button" type="button">Geef een hotelgiftcard</button>
+                                    </li>
+                                    <li class="menu-item menu-item-hamburger">
+                                        <button class="menu-button-another" type="button">Boek een hotel</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-inner">
+                        <h5 class="subtitle-header">Barcelona</h5>
+                        <h1 class="title">Het hart van Spanje</h1>
+                        <p class="text-header">Het bruisende Barcelona. Met het geluid van castagnetten, de geur van gegrilde gamba’s en de fruitige smaak van sangria ben je er in gedachten al!</p>
+                    </div>
+                    <div class="header-date js-form">
+                        <div class="calendar-date">
+                            <p class="text-calendar">vr. 19 okt  -  zo. 21 okt</p>
+                        </div>
+                        <div class="human">
+                            <p class="human-text">2 volwassenen  -  0 kinderen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="hotel">
+                <div class="container">
+                    <div class="content-hotel">
+                        <div class="info-hotel hotel-george">
+                            <div class="extra-block"></div>
+                            <img class="photo-hotel photo-hotel-george" src="image/george.jpg" alt="hotel-george" width="360" height="230">
+                            <p class="hotel-location">Barcelona</p>
+                            <h2 class="title-hotel">Four Seasons Hotel George V</h2>
+                            <div class="hotel-stars">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star photo-star-last" src="image/star.svg" alt="star">
+                            </div>
+                            <p class="text-hotel">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                            <p class="price">vanaf € 205 per nacht</p>
+                        </div>
+                        <div class="info-hotel hotel-west-cord hotel-inner">
+                            <div class="extra-block extra-block-inner"></div>
+                            <img class="photo-hotel photo-hotel-inner" src="image/west-cord.jpg" width="380" height="250" alt="west-cord-hotel">
+                            <p class="hotel-location">Barcelona</p>
+                            <h2 class="title-hotel">WestCord Fashion Hotel</h2>
+                            <div class="hotel-stars">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star photo-star-last" src="image/star.svg" alt="star">
+                            </div>
+                            <p class="text-hotel">Het trendy WestCord Fashion Hotel Amsterdam ligt tegenover het World Fashion Centre, in het zuidwesten van Amsterdam. Er is gratis WiFi beschikbaar, en het...</p>
+                            <p class="price">vanaf € 129 per nacht</p>
+                        </div>
+                        <div class="info-hotel hotel-pullman hotel-inner">
+                            <div class="extra-block extra-block-inner"></div>
+                            <img class="photo-hotel photo-hotel-inner" src="image/pullman.jpg" alt="pullman-hotel" width="380" height="250">
+                            <p class="hotel-location">Barcelona</p>
+                            <h2 class="title-hotel">Pullman Barcelona Skipper</h2>
+                            <div class="hotel-stars">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star photo-star-last" src="image/star.svg" alt="star">
+                            </div>
+                            <p class="text-hotel">De wereldstad Rome móet iedereen een keer gezien hebben. Deze stad ademt geschiedenis, levenslust en stijl. Voel de magische sfeer terwijl je wandelt door...</p>
+                            <p class="price">vanaf € 225 per nacht</p>
+                        </div>
+                        <div class="info-hotel hotel-inner">
+                            <div class="extra-block extra-block-inner"></div>
+                            <img class="photo-hotel photo-hotel-inner" src="image/george-view.jpg" alt="george-hotel" width="380" height="250">
+                            <p class="hotel-location">Barcelona</p>
+                            <h2 class="title-hotel">Four Seasons Hotel George V</h2>
+                            <div class="hotel-stars">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star photo-star-last" src="image/star.svg" alt="star">
+                            </div>
+                            <p class="text-hotel">Het Four Seasons Hotel George V Paris ligt vlak bij de Avenue des Champs-Élysées en geeft een nieuwe dimensie aan het begrip luxe in de lichtstad. Het hotel…</p>
+                            <p class="price">vanaf € 205 per nacht</p>
+                        </div>
+                        <div class="info-hotel hotel-inner">
+                            <div class="extra-block extra-block-inner"></div>
+                            <img class="photo-hotel photo-hotel-inner" src="image/west-cord-view.jpg" alt="george-hotel" width="380" height="250">
+                            <p class="hotel-location">Barcelona</p>
+                            <h2 class="title-hotel">WestCord Fashion Hotel</h2>
+                            <div class="hotel-stars">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star photo-star-last" src="image/star.svg" alt="star">
+                            </div>
+                            <p class="text-hotel">Het trendy WestCord Fashion Hotel Amsterdam ligt tegenover het World Fashion Centre, in het zuidwesten van Amsterdam. Er is gratis WiFi beschikbaar, en het...</p>
+                            <p class="price">vanaf € 129 per nacht</p>
+                        </div>
+                        <div class="info-hotel hotel-inner">
+                            <div class="extra-block extra-block-inner"></div>
+                            <img class="photo-hotel photo-hotel-inner" src="image/pullman-view.jpg" alt="george-hotel" width="380" height="250">
+                            <p class="hotel-location">Barcelona</p>
+                            <h2 class="title-hotel">Pullman Barcelona Skipper</h2>
+                            <div class="hotel-stars">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star" src="image/star.svg" alt="star">
+                                <img class="photo-star photo-star-last" src="image/star.svg" alt="star">
+                            </div>
+                            <p class="text-hotel">De wereldstad Rome móet iedereen een keer gezien hebben. Deze stad ademt geschiedenis, levenslust en stijl. Voel de magische sfeer terwijl je wandelt door...</p>
+                            <p class="price">vanaf € 205 per nacht</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
